@@ -43,15 +43,15 @@ public class ZuulServerApplication extends SpringBootServletInitializer {
     	return new WebSocketFilter();
     }
     
-    @Bean
-    public PrePerformanceFilter prePerformanceFilter() {
-    	return new PrePerformanceFilter();
-    }
-    
-    @Bean
-    public PostPerformanceFilter postPerformanceFilter() {
-    	return new PostPerformanceFilter();
-    }
+//    @Bean
+//    public PrePerformanceFilter prePerformanceFilter() {
+//    	return new PrePerformanceFilter();
+//    }
+//    
+//    @Bean
+//    public PostPerformanceFilter postPerformanceFilter() {
+//    	return new PostPerformanceFilter();
+//    }
     
     @Bean
     public FaviconFilter faviconFilter() {

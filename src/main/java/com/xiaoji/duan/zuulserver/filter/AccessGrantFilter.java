@@ -71,6 +71,11 @@ public class AccessGrantFilter extends ZuulFilter {
         String requestURI = ctx.getRequest().getRequestURI();
         String prefix = "/";
 
+        // 本地访问
+        if ("192".equals(subdomain)) {
+            subdomain = "www";
+        }
+        
         if (requestURI.indexOf('/', 1) > 3)
         	prefix = requestURI.substring(1, requestURI.indexOf('/', 1));
 
